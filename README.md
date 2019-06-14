@@ -303,7 +303,12 @@ db.encounters.aggregate([
         }
     }},
     {$unwind: "$Encounters"},
-    {$project: {"Pokemon":"$Encounters.Pokemon", "Distance":"$distance", "Continent":"$CommonInfo.Continent", "City":"$CommonInfo.City"}},
+    {$project: {
+        		"Pokemon":"$Encounters.Pokemon", 
+        		"Distance":"$distance", 
+        		"Continent":"$CommonInfo.Continent", 
+        		"City":"$CommonInfo.City"
+    }},
     {$sort: {"Distance": 1}},
     {$limit: 1}
 ])
