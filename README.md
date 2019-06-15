@@ -26,9 +26,11 @@ U projektu su korišteni set podataka sa osobinama pokemona i set pokemona sa za
  4. *Studio 3T 2019.3.0* ili drugi odgovarajući MongoDB GUI.
  
  ### Pokretanje
- 1. Pokrenuti mongo u lokalu na portu 27017 i kreirati bazu sa nazivom sbp.
- 2. Pokrenuti skriptu koja kreira kolekcije pokemon i encounters. Pozicionirati se u folder *scripts* i pokrenuti: <br/> 
+ 1. Skinuti csv fajlove. Kreirati data folder i u njega staviti csv fajlove preimenovane u pokemon.csv i encounters.csv (ili promeniti
+ nazive fajlova koji se koriste u *scripts/fill_database.py* na odgovarajuće.
+ 2. Pokrenuti mongo u lokalu na portu 27017 i kreirati bazu sa nazivom sbp.
+ 3. Pokrenuti skriptu koja kreira kolekcije pokemon i encounters. Pozicionirati se u folder *scripts* i pokrenuti: <br/> 
 	 <code>
 		python fill_database.py
 	 </code>
- 3. Željeni upit kopirati iz fajla *upiti.md* i pokrenuti u okviru *Studio 3T*
+ 4. Željeni upit kopirati iz fajla *upiti.md* i pokrenuti u okviru *Studio 3T*
