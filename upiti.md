@@ -290,7 +290,7 @@ db.encounters.ensureIndex({'Encounters.Location.GeoLocation':'2dsphere'})
 
 db.encounters.aggregate([
     { $geoNear: {
-        near: {"type": "Point", "coordinates": [45.267136, 19.833549]},
+        near: {"type": "Point", "coordinates": [19.833549, 45.267136]},
         distanceField: "distance",
         includeLocs: "location",
         spherical: true
@@ -316,17 +316,18 @@ db.encounters.aggregate([
 *Rezultat:* <br/>
 <pre>
 { 
-    "_id" : ObjectId("5d03745c75378a9032e50fc7"), 
+    "_id" : ObjectId("5d04d3037cdf7ccaab495b95"), 
     "Pokemon" : {
-        "Id" : 104.0, 
-        "Name" : "Cubone", 
+        "Id" : NumberInt(16), 
+        "Name" : "Pidgey", 
         "Type" : [
-            "Ground"
+            "Normal", 
+            "Flying"
         ], 
-        "Total" : 320.0
+        "Total" : NumberInt(251)
     }, 
-    "Distance" : 1072211.4317456104, 
+    "Distance" : 193046.47106034038, 
     "Continent" : "Europe", 
-    "City" : "Rome"
+    "City" : "Sarajevo"
 }
 </pre>
