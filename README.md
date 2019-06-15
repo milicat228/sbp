@@ -1,8 +1,18 @@
 # Analiza podataka iz igrice Pokemon Go
 
-#### Projekat za predmet sistemi baza podataka
+Projekat za predmet sistemi baza podataka
 
+### Opis
+[Pokémon GO](https://www.pokemongo.com/en-us/ "Pokémon GO homepage") je AR mobilna igra. Igra koristi GPS kako bi omogućila igraču da pronađe i uhvati pokemona. Igraču se prikazuju pokemoni na njegovoj stvarnoj lokaciji, a uticaj na to kog pokemona će igrač sresti ima više faktora. Neki od faktora su:
+* osobine pokemona, poput tipa i snage
+* karakteristike lokacije na kojoj se nalazi igrač
+* vremenske prilike.
 <br/>
+
+U okviru projekta iskorišteni su podaci o pokemonima i susretima kako bi se ispitale veze između susreta i ostalih faktora, te dali odgovori na pitanja kao što su:
+* Po kom vremenu se najviše pojavljuje koji tip pokemona?
+* Koji pokemoni se najčešće pojavljuju sa Bulbasaurom?
+* Koji pokemoni su se pojavili samo na jednom kontinentu?
 
 ### Korišteni podaci
 U projektu su korišteni set podataka sa osobinama pokemona i set pokemona sa zabeleženim susretima. Setove podataka i informacije o njima moguće je pronaći na sledećim linkovima:
